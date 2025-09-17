@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Keijon kahvila</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="galleria.html">Galleria</a></li>
+                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                <li><a href="tilaa.html">Tilaa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Tilauslomake</h2>
+        <form action="#" method="post">
+            <label for="name">Nimi:</label><br>
+            <input type="text" id="name" name="name" required /><br>
+
+            <label for="email">Sähköposti:</label><br>
+            <input type="email" id="email" name="email" required /><br>
+
+            <label for="osoite">Osoite:</label><br>
+            <input type="text" id="osoite" name="osoite" required /><br>
+
+            <label for="tuote">Tilattavat tuotteet:</label><br>
+            <textarea id="tuote" name="tuote" rows="4" cols="50" placeholder="Kirjoita tilattavat tuotteet tähän..." required></textarea><br>
+
+            <input type="submit" value="Lähetä" />
+        </form>
+    </main>
+</body>
+</html>
