@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: black;
+  font-size: 16px;
+  background-color: grey;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  padding: 1em;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgb(83.6956521739, 21.3043478261, 21.3043478261);
+}
+.btn.btn-primary {
+  background-color: grey;
+  font-size: 26px;
+  max-width: 200px;
+  max-height: 80px;
+}
+.btn.btn-primary:hover {
+  background: rgb(83.6956521739, 21.3043478261, 21.3043478261);
+}
+.btn.btn-secondary {
+  font-size: 16px;
+  max-width: 80px;
+  max-height: 30px;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  font-size: 26px;
+}
+.site-header .btn {
+  display: inline-block;
+  margin: 1em auto 0;
+}
+
+.site-footer {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  bottom: 0;
+}
+
+.nav-link {
+  display: flex;
+  text-decoration: none;
+  color: brown;
+  padding: 1em;
+  font-size: 20px;
+}
+.nav-link:hover {
+  color: #cccccc;
+}
+.nav-link.nav-link {
+  font-size: 20px;
+  max-width: 100px;
+}
+.nav-link.link {
+  font-size: 16px;
+  max-width: 20px;
+}
+
+.link {
+  display: flex;
+  text-decoration: none;
+  color: brown;
+  padding: 1em;
+  font-size: 20px;
+}
+.link:hover {
+  color: #cccccc;
+}
+.link.nav-link {
+  font-size: 20px;
+  max-width: 100px;
+}
+.link.link {
+  font-size: 16px;
+  max-width: 20px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  text-align: center;
+  font-size: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.sidebar {
+  background-color: grey;
+  font-size: 26px;
+}
+.sidebar .hours {
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */

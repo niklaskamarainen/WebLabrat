@@ -1,0 +1,58 @@
+@mixin media($model) {
+  @media (min-width: map-get($breakpoints, $model)) {
+    @content;
+  }
+}
+
+@mixin buttons {
+    display: flex;
+    align-items: center;
+    background-color: $primary-color;
+    color: $white-font;
+    border: 1px solid black;
+    padding: $spacer;
+    text-decoration: none;
+    cursor: pointer;
+    
+    &:hover{
+        background: darken($brown-color, 20%);
+    }
+    &.btn-primary{
+        background-color: $grey-color;
+        font-size: $font-size-large;
+        max-width: $button-width-big;
+        max-height: $button-height-big;
+        &:hover{
+        background: darken($brown-color, 20%);
+        }
+    }
+    &.btn-secondary{
+        font-size: $font-size-base;
+        max-width: $button-width-small;
+        max-height: $button-height-small;
+    }
+}
+@mixin container {
+    margin: 0 auto;   
+    padding: $spacer;
+}
+
+@mixin links {
+    display: flex;
+    text-decoration: none;
+    color: $brown-color;
+    padding: $spacer;
+    font-size: $font-size-nav;
+
+    &:hover{
+        color: darken($white-font, 20%);
+    }
+    &.nav-link{
+        font-size: $font-size-nav;
+        max-width: 100px;
+    }
+    &.link{
+        font-size: $font-size-base;
+        max-width: 20px;
+    }
+}
